@@ -13,7 +13,7 @@ app.get("/",function(req,res){
     res.sendFile(__dirname+"/index.html");
 })
 app.get("/failed",function(req,res){
-    res.redirect("/")
+    res.redirect("/");
 })
 app.get("/success",function(req,res){
     res.redirect("/");
