@@ -1,10 +1,12 @@
+//jshint esversion:6
+
 const express = require('express');
 const request = require('request');
 const bodyParser = require('body-parser');
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("public")); 
+app.use(express.static("Public")); 
 
 app.listen(process.env.PORT||3000,function(){
     console.log("Listening on port 3000!" +__dirname);
